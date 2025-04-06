@@ -1,0 +1,44 @@
+{
+  "manifest_version": 3,
+  "name": "Anime Tracker for MyAnimeList",
+  "version": "1.0.0",
+  "description": "Automatically tracks anime watched on streaming platforms and updates MyAnimeList",
+  "icons": {
+    "16": "images/icon16.png",
+    "48": "images/icon48.png",
+    "128": "images/icon128.png"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "images/icon16.png",
+      "48": "images/icon48.png",
+      "128": "images/icon128.png"
+    }
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": [
+    "storage",
+    "tabs",
+    "identity",
+    "scripting"
+  ],
+  "host_permissions": [
+    "https://api.myanimelist.net/*",
+    "*://*.crunchyroll.com/*",
+    "*://*.netflix.com/*",
+    "*://*.anicrush.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.crunchyroll.com/*",
+        "*://*.netflix.com/*",
+        "*://*.anicrush.com/*"
+      ],
+      "js": ["content.js"]
+    }
+  ]
+}
