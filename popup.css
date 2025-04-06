@@ -1,0 +1,82 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  width: 320px;
+  padding: 0;
+  margin: 0;
+  background-color: #f5f5f5;
+}
+
+.container {
+  padding: 15px;
+}
+
+h1 {
+  font-size: 20px;
+  color: #2e51a2;
+  margin-top: 0;
+  text-align: center;
+}
+
+h2 {
+  font-size: 16px;
+  color: #2e51a2;
+  margin-top: 15px;
+}
+
+h3 {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+button {
+  background-color: #2e51a2;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+button:hover {
+  background-color: #1d3c7c;
+}
+
+#login-btn {
+  margin: 10px auto;
+  display: block;
+}
+
+.status-container, .settings-container {
+  margin-top: 15px;
+  background-color: white;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+#status-message {
+  padding: 5px;
+  margin: 5px 0;
+  font-weight: bold;
+}
+
+#anime-title {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+#anime-episode {
+  margin-bottom: 10px;
+}
+
+label {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+
+input[type="checkbox"] {
+  margin-right: 8px;
+}
