@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Anime Tracker for MyAnimeList</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Anime Tracker</h1>
+    
+    <div id="login-section">
+      <p>Connect your MyAnimeList account to start tracking.</p>
+      <button id="login-btn">Connect to MyAnimeList</button>
+    </div>
+    
+    <div id="user-section" style="display: none;">
+      <p>Connected as: <span id="username"></span></p>
+      <button id="logout-btn">Logout</button>
+      
+      <div class="status-container">
+        <h2>Status</h2>
+        <div id="status-message">Ready to track</div>
+        <div id="current-anime" style="display: none;">
+          <h3>Currently detected:</h3>
+          <div id="anime-title"></div>
+          <div id="anime-episode"></div>
+          <button id="update-mal-btn">Update MyAnimeList</button>
+        </div>
+      </div>
+      
+      <div class="settings-container">
+        <h2>Settings</h2>
+        <label>
+          <input type="checkbox" id="auto-update" checked>
+          Automatically update MyAnimeList
+        </label>
+      </div>
+    </div>
+  </div>
+  
+  <script src="popup.js"></script>
+</body>
+</html>
